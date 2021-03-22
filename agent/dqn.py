@@ -83,7 +83,7 @@ class Agent(object):
             actions = self.q_eval.predict(state)
             action = np.argmax(actions)
 
-            return action
+        return action
 
     def learn(self):
         if self.memory.mem_cntr < self.batch_size:
